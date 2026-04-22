@@ -1,0 +1,402 @@
+body{
+    background-color: #2d455d;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Outfit" ,sans-serif;
+    overflow-x: hidden;
+}
+.img-title{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    height: 70px;
+}
+.main-title{
+    color: white;
+    font-weight: 600;
+    transform: translateY(-11px);
+    letter-spacing: 2px;
+}
+.icon-nav{
+    width: 90px;
+    height: 90px;
+    transform: translateY(-16px);
+}
+.navs li{
+    list-style-type: none;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.navs li:hover{
+    transform: scale(1.05);
+}
+.navs{
+    gap:13px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 0 10px -5px rgba(0, 0, 0, 0.5);
+    width: 230px;
+    height: 780px;
+    left: 0;
+    position: sticky;
+}
+.page{
+    background-color:#162839 ;
+    margin-left: 230px;
+    padding: 20px ;
+    margin-top: -780px;
+    display: none;
+}
+#introduction{
+    display: flex;
+}
+.ard-comp{
+    height: 600px;
+    width: 350px;
+    border-radius: 5px;
+}
+.title-intro{
+    transform: translateX(20px);
+    color: white;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 2px;
+    font-stretch: condensed;
+}
+.search-img{
+    height: 80px;
+    width: 80px;
+}
+.img1-text{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.search{
+    flex-direction: column;
+    gap:1px;
+    transform: translateY(-5px);
+}
+.search-t{
+    color: white;
+    font-family: "Outfit" ,sans-serif;
+    letter-spacing: 1px;
+}
+.disc-1{
+    color: white;
+    transform: translateY(-14px);
+    opacity: 0.9;
+}
+.geer{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  
+}
+.disc-2{
+    color: white;
+    transform: translateY(-30px);
+    opacity: 0.9;
+
+}
+.geer-icon{
+    height: 70px;
+    width: 80px;
+    transform: translateY(7px);
+}
+.img2-text{
+    display: flex;
+    transform: translate(-80px,-20px);
+}
+.imgs{
+    flex-direction: column;
+    display: flex;
+}
+.explaination{
+    flex-direction: column;
+    display: flex;
+}
+.geer-t{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.arduino-icon{
+    height: 40px;
+    width: 60px;
+}
+.img3-text{
+    display: flex;
+    flex-direction: row;
+    transform: translate(-70px , -30px);
+}
+.arduino{
+    display: flex;
+    flex-direction: column; 
+}
+.arduino-t{
+    transform: translate(10px , -24px);
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.disc-3{
+    transform: translate(10px , -56px);
+    opacity: 0.9;
+}
+.img4-text{
+    display: flex;
+    flex-direction: row;
+    transform: translate(-72px , -80px);
+}
+.calc{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(4px);
+}
+.calc-icon{
+    width: 70px;
+    height: 60px;
+}
+.calc-t{
+    transform: translateY(-10px);
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.disc-4{
+    /*transform: translateY(-40px);*/
+    opacity: 0.9;
+}
+#mosfet , #seven-segment{
+    height: 800px;
+}
+.ohms , .ohms-2 , .ohms-3{
+    
+    background-color: #2d455d;
+    
+    padding-left: 20px;
+    margin-right: 40px;
+    height: 160px;
+}
+.ohms-t , .ohms-t-2{
+    background-color:#1c354e;
+    margin: 0;
+    padding : 10px 9px;
+    border-radius: 12px;
+    transform: translateY(10px);
+    width: 330px;
+    letter-spacing: 1px;
+}
+.ohms{
+    transform: translate(-80px , -100px);
+    width: 620px;
+}
+.ohms-3{
+    transform: translate(-594px , 20px);
+}
+.ohms-2 ,.ohms-3{
+    width: 820px;
+    padding: 0 220px;
+    padding-bottom: 40px;
+    height: 180px;
+}
+.ohms-2{
+    transform: translate(-594px , 60px);
+}
+hr{
+    border: 2px solid #1c354e;
+    border-top-left-radius: 6px ;
+    border-bottom-left-radius: 6px;
+    width: 600px;
+    transform: translateY(-1.5px);
+}
+.texts , .texts-22{
+    display: flex;
+    flex-direction: column;
+}
+.disc-4 {
+    transform: translateY(-45px);
+}
+
+.ohms-t2{
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.calc{
+    display: flex;
+    flex-direction: column;
+}
+.btn12{
+    background-color: #2d455d;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px #2d455d;
+    cursor: pointer;
+    color: white;
+    transform: translate(70px , -90px);
+}
+.mosfet-img{
+    width: 340px;
+    height: 560px;
+    border-radius: 10px;
+    z-index: 200;
+}
+.img-mosfet ,.img-7segment{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.disc-5 , .disc-5-2{
+    transform: translateY(-35px);
+}
+.text-s ,.text-s1{
+    display: flex;
+    flex-direction: column;
+}
+.text-s1{
+    transform: translateY(-30px);
+}
+.texts-2{
+    display: flex;
+    flex-direction: column;
+}
+.mosfet-title ,.segment-title{
+    letter-spacing: 1.75px;
+}
+.segment-title{
+    white-space: nowrap;
+    transform: translateY(6px);
+}
+.texts-4{
+    display: flex;
+    flex-direction: row;
+}
+.texts2{
+    transform: translateY(70px);
+}
+.texts21{
+   transform: translate(-85px,40px);
+}
+.max , .no ,.common ,.per-seg{
+    background-color:#2d455d;
+    height: 40px;
+    padding: 7px ;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 2px white solid ;
+    border-top: 2px white solid ;
+    width: 350px;
+}
+.third-p , .first-p , .first-2 , .third-2{
+    letter-spacing: 1.5px;
+}
+.first-p , .first-2{
+    transform: translateY(-4px);
+}
+.sec-p {
+    transform: translateX(8px);
+}
+.wiring-div , .wiring-div2{
+    background-color:#0e1d2b;
+
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 2px #060a16 solid;
+    width: 715px;
+    border-radius: none;
+}
+.wiring-div2{
+    transform: translateX( -365px);
+}
+.wiring-div{
+        transform: translate(-364px , 30px);
+}
+.wiring-disc{
+    letter-spacing: 1.25px;
+    line-height: 25px;
+}
+.volt , .current , .resistance{
+    display: flex;
+    flex-direction: column;
+}
+.ohms-law{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+.result-calc{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.enter-div{
+    background-color: rgb(4, 77, 125);
+    border: white  1px solid;
+    border-radius: 10px;
+    width: 140px;
+    height: 44px;
+}
+.enter ,.enter2 ,.result{
+    transform: translate(17px , -7px);
+}
+.v , .I , .resist{
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.btn-calc{
+    border-radius: 10px;
+    background-color:#1c354e;
+    letter-spacing: 1.5px;
+    color: white;
+    border: #1c354e solid 2px;
+    padding: 10px ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.values{
+    transform: translate(-424px , -10px);
+    letter-spacing: 1.5px;
+}
+.sec-21{
+    transform: translateX(5px);
+}
+.fourth-2 ,.fourth-p{
+    transform: translateX(10px);
+    letter-spacing: 1px;
+}
+.col1{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.wiring-disc2{
+     letter-spacing: 1.25px;
+    line-height: 25px;
+    transform: translateY(-11px);
+}
+.wiring-disc-2{
+     letter-spacing: 1.25px;
+    line-height: 25px;
+    transform: translateY(37px);
+}
+.segment-img{
+    z-index: 200;
+    border-radius: 10px;
+    width: 330px;
+    height: 600px;
+}
+.code-div-img{
+    display: flex;
+    flex-direction: row;
+    transform: translate(-520px, 30px);
+    gap: 20px;
+}
+.code-img{
+    border-radius: 10px;
+}
+.code{
+    letter-spacing: 1px;
+    font-size: 20px;
+}

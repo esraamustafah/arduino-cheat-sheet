@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arduino components</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="img-title">
+        <img src="assest/icon.png" class="icon-nav" />
+        <div class="main-title1">
+          <h1 class="main-title">ARDUINO COMPONENTS CHEAT SHEET</h1>
+        </div>
+      </div>
+      <div class="navs">
+        <ul>
+          <li onclick="showSection('introduction')">INTRODUCTION</li>
+        </ul>
+        <ul>
+          <li onclick="showSection('mosfet')">N-MOSFET (IRF510)</li>
+        </ul>
+        <ul>
+          <li onclick="showSection('seven-segment')">7-SEGMENT DISPLAY</li>
+        </ul>
+        <ul>
+          <li class="nav-item">DHT22 SENSOR</li>
+        </ul>
+        <ul>
+          <li class="nav-item">HC-SR04 SONIC</li>
+        </ul>
+        <ul>
+          <li class="nav-item">4x4 KEYPAD</li>
+        </ul>
+        <ul>
+          <li class="nav-item">LED/RESISTOR</li>
+        </ul>
+        <ul>
+          <li class="nav-item">SG90 SERVO</li>
+        </ul>
+        <ul>
+          <li class="nav-item">TACTILT BUTTON</li>
+        </ul>
+        <ul> 
+          <li class="nav-item">16x2 LCD</li>
+        </ul>
+      </div>
+    </div>
+    <div class="page" id="introduction">
+      <img src="assest/ard como.png" class="ard-comp" />
+      <div class="explaination">
+        <h2 class="title-intro">WELCOME TO THE ARDUINO CHEAT SHEET</h2>
+
+        <div class="img1-text">
+          <img src="assest/search-icon.png" class="search-img" />
+          <div class="imgs">
+            <div class="search">
+              <h3 class="search-t">1. FIND YOUR COMPONENT</h3>
+              <p class="disc-1">
+                Select a component from the list to view its specific details.
+              </p>
+            </div>
+            <div class="img2-text">
+              <img src="assest/geer icon.png" class="geer-icon" />
+              <div class="geer">
+                <h2 class="geer-t">2. VIEW KEY SPECIFICATIONS</h2>
+                <p class="disc-2">
+                  View key specifications , about and short settings.
+                </p>
+              </div>
+            </div>
+            <div class="img3-text">
+              <img src="assest/arduino icon.png" class="arduino-icon" />
+              <div class="arduino">
+                <h2 class="arduino-t">3. LEARN PROPER WIRING</h2>
+                <p class="disc-3">
+                  Understand how to properly wire components to the board.
+                </p>
+              </div>
+            </div>
+            <div class="img4-text">
+              <img src="assest/calc icon.png" class="calc-icon" />
+              <div class="calc">
+                <h2 class="calc-t">4. ACCESS HELPFUL TOOLS</h2>
+                <p class="disc-4">
+                  Determine circuit requirements and operating specs.
+                </p>
+              </div>
+            </div>
+            <div class="ohms">
+              <h2 class="ohms-t">OHM'S LAW CALCULATOR</h2>
+              <hr>
+              <div class="texts">
+                <h2 class="ohms-t2">USE THE CALCULATOR ON COMPONENT PAGES</h2>
+              <p class="disc-5">
+                Access quick calculators tailored to each component.
+              </p>
+              </div>
+              
+            </div>
+            <div class="btn1">
+              <a href="#mosfet" style="text-decoration: none; color: white;"><button class="btn12">GET STARTED</btn></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page" id="mosfet">
+      <div class="img-mosfet">
+        <img src="assest/mosfet img.png" class="mosfet-img">
+        <div class="texts-4">
+          <div class="text-s">
+          <h2 class="mosfet-title">N-MOSFET (IRF510)</h2>
+          <div class="max"><p class="first-p">Max. VDS:</p></div>
+          
+          <p class="sec-p">Max. ID:</p>
+          <div class="no"><p class="third-p">Logic-Level compatible:</p></div>
+          
+          </div>
+          <div class="texts2">
+            <div class="max"><p class="first-2" >100V</p></div>
+            
+            <p class="sec-2">4A (w/heatsink)</p>
+            <div class="no"><p class="third-2">NO</p></div>
+             <div class="wiring">
+          <div class="wiring-div">
+            <p class="wiring-disc">
+            Connection Example (Arduino Control) <br>
+            PIN 9 -> Resistor -> GATE<br>
+            DRAIN -> Load(+) -> Power(+)<br>
+            SOURCE -> Load(-) -> Power(-)/GND
+          </p>
+          </div>
+          <div class="ohms-2">
+              <h2 class="ohms-t-2">OHM'S LAW CALCULATOR</h2>
+              <hr>
+              <div class="ohms-law">
+                <div class="volt">
+                  <p class="v">Voltage(V)</p>
+                  <div class="enter-div"><p class="enter">Enter V: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                  
+                </div>
+                <div class="current">
+                  <p class="I">Current (I)</p>
+                  <div class="enter-div"><p class="enter2">Enter I: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] </p></div>
+                  
+                </div>
+                <div class="resistance">
+                  <p class="resist">Resistance (Ω)</p>
+                  <div class="result-calc">
+                    <div class="enter-div"><p class="result">Result R: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                    <button class="btn-calc">CALCULATE</button>
+                  </div>
+                  <p class="values">Enter two values , calculate the third.</p>
+                </div>
+              </div>
+              
+              </div>
+            
+          </div>
+        </div>
+       
+          
+        </div>
+      </div>
+    </div>
+    <div class="page" id="seven-segment">
+      <div class="img-7segment">
+        <img src="assest/7-sgement.png" class="segment-img">
+        <div class="texts-4">
+          <div class="text-s1">
+          <h2 class="segment-title">SINGLE-DIGIT 7-SEGMENT DISPLAY</h2>
+          <div class="common"><p class="first-p">Common Type:</p></div>
+          
+          <p class="sec-p">Segment Voltage (VF):</p>
+          <div class="per-seg"><p class="third-p">Current per Segment (If) :</p></div>
+          <p class="fourth-p">Digit Height:</p>
+          </div>
+          <div class="texts21">
+            <div class="common"><p class="first-2" >Common Anode</p></div>
+            
+            <p class="sec-21">2.0V (Red LED)</p>
+            <div class="per-seg"><p class="third-2">20mA (max)</p></div>
+            <p class="fourth-2">0.56 INCHES</p>
+             <div class="wiring">
+          <div class="wiring-div2">
+            <div class="col1">
+            <p class="wiring-disc2">
+            Pinout and Wiring Example: <br><br>
+            PIN 1 (CA) -> 5V (Arduino)<br>
+            PIN 2 -> Resisitor -> DP (pin)<br>
+            PIN 3 -> Resisitor -> g (pin)<br>
+            PIN 4 -> Resisitor -> f (pin)<br>
+            PIN 5 (CA) -> 5V (Arduino) 
+          </p>
+        
+              <p class="wiring-disc-2">
+                 PIN 6 -> Resisitor -> e (pin) -> Arduino PIN 5<br>
+                 PIN 7 -> Resisitor -> d (pin) -> Arduino PIN 6<br>
+                 PIN 8 -> Resisitor -> c (pin) -> Arduino PIN 7<br>
+                 PIN 9 -> Resisitor -> b (pin) -> Arduino PIN 8<br>
+                 PIN 10 -> Resistor -> a (pin) -> Arduino PIN 9<br>
+                 <b>(228Ω resistor recommended per segment).</b> 
+              </p>
+              </div>
+          </div>
+          <div class="ohms-3">
+              <h2 class="ohms-t-2">OHM'S LAW CALCULATOR</h2>
+              <hr>
+              <div class="ohms-law">
+                <div class="volt">
+                  <p class="v">Voltage(V)</p>
+                  <div class="enter-div"><p class="enter">Enter V: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                  
+                </div>
+                <div class="current">
+                  <p class="I">Current (I)</p>
+                  <div class="enter-div"><p class="enter2">Enter I: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] </p></div>
+                  
+                </div>
+                <div class="resistance">
+                  <p class="resist">Resistance (Ω)</p>
+                  <div class="result-calc">
+                    <div class="enter-div"><p class="result">Result R: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                    <button class="btn-calc">CALCULATE</button>
+                  </div>
+                  <p class="values">Enter two values , calculate the third.</p>
+                </div>
+                
+              
+              </div>
+            
+          </div>
+        </div>
+       <div class="code-div-img">
+                <h2 class="code">Simple Code Snippet (conceptual): </h2>
+                <img src="assest/code.png" class="code-img">
+              </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+<script>
+  function showSection(sectionId) {
+    const allPages = document.querySelectorAll('.page'); 
+    allPages.forEach(page => {
+        page.style.display='none';
+    })
+    const selectedPage = document.getElementById(sectionId);
+    if(selectedPage){
+        selectedPage.style.display='flex';
+    }
+}
+
+</script>
+  </body>
+</html>
