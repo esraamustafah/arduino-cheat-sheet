@@ -1,4 +1,4 @@
-# arduino-cheat-sheet
+# Arduino-Cheat-Sheet
 I'm an Embedded systems enthusiast and Front-End developer , so what do u expect I made?
 OFC adruino cheat sheet 
 I had the intension to explain those components :
