@@ -32,7 +32,7 @@
           <li onclick="showSection('dht22')">DHT22 SENSOR</li>
         </ul>
         <ul>
-          <li class="nav-item">HC-SR04 SONIC</li>
+          <li onclick="showSection('sonic')">HC-SR04 SONIC</li>
         </ul>
         <ul>
           <li class="nav-item">SG90 SERVO</li>
@@ -313,6 +313,63 @@
       </div>
      
     </div>
+    </div>      
+    <div class="page" id="sonic">
+      <div class="img-text-s">
+        <img src="assest/ultrasonic.png" class="img-s">
+        <div class="texts-s">
+          <h2 class="title-s">HC-SRO4 ULTRASONIC SENSOR</h2>
+          <div class="cols-s">
+            <div class="cols-s-1">
+              <div class="working-div"><p class="working">Working Voltage</p></div>
+              
+              <p class="static">Static Current</p>
+              <div class="sensing-div"><p class="sensing">Sening Angle:</p></div>
+              
+              <p class="distance">Detection Distance:</p>
+              <div class="high-div"><p class="high">High Precision:</p></div>
+              
+              <p class="trig">Input Trigger:</p>
+              <div class="echo-div"><p class="echo">Echo Signal:</p> </div>
+              
+            </div>
+            <div class="cols-s-2">
+              <div class="working-div"><p class="working-2">5V DC</p></div>
+              
+              <p class="static-2"><2mA</p>
+              <div class="sensing-div"><p class="sensing-2"><15 degrees</p>></div>
+              
+                <p class="distance-2">2cm - 488cm</p>
+                <div class="high-div"><p class="high-2">up to 3mm</p></div>
+                
+                <p class="trig-2">10μs TTL pulse</p>
+                <div class="echo-div"><p class="echo-2">Output TTL PWL Signal</p></div>
+                
+
+            </div>
+           
+            </div>
+             <div class="wiring-s">
+              <h2 class="wiring-t-s">
+                Pinout and Wiring Example:
+              </h2>
+              <p class="wiring-p-s">
+                VCC (Pin 1): -> 5V(Arduino)<br>
+                TRIG (Pin 2): -> Arduino PIN 12<br>
+                ECHO (Pin 3): -> Arduino PIN 13<br>
+                GND ( Pin 4): -> GND (Arduino)<br>
+              </p>
+          </div>
+          <div class="code-s">
+            <h2 class="title-s-code">
+              Simple Code Snippet (Conceptual):
+            </h2>
+            <img src="assest/code-s.png" class="coding-s">
+
+          </div>
+        </div>
+      </div>
+    
 
 <script>
   function showSection(sectionId) {
