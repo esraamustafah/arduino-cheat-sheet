@@ -29,22 +29,13 @@
           <li onclick="showSection('seven-segment')">7-SEGMENT DISPLAY</li>
         </ul>
         <ul>
-          <li class="nav-item">DHT22 SENSOR</li>
+          <li onclick="showSection('dht22')">DHT22 SENSOR</li>
         </ul>
         <ul>
           <li class="nav-item">HC-SR04 SONIC</li>
         </ul>
         <ul>
-          <li class="nav-item">4x4 KEYPAD</li>
-        </ul>
-        <ul>
-          <li class="nav-item">LED/RESISTOR</li>
-        </ul>
-        <ul>
           <li class="nav-item">SG90 SERVO</li>
-        </ul>
-        <ul>
-          <li class="nav-item">TACTILT BUTTON</li>
         </ul>
         <ul> 
           <li class="nav-item">16x2 LCD</li>
@@ -246,6 +237,83 @@
       </div>
     </div>
     </div>
+    <div class="page" id="dht22">
+      <div class="img-text-d">
+        <img src="assest/dht22.png" class="img-d">
+        <div class="texts-key">
+          <h2 class="d-title">DHT22 DIGITAL HUMIDITY AND TEMPRETURE SENSOR</h2>
+          <div class="cols">
+            <div class="col1-d">
+            <div class="humid-div"><p class="humid">HUMIDITY RANGE:</p></div>
+            <p class="temp">TEMPRETURE RANGE:</p>
+            <div class="voltage-div"><p class="voltage">OPERATING VOTAGE:</p></div>
+               <p class="signal">SIGNAL TYPE:</p>
+            <div class="sensor-div"><p class="sensor">SENSING PERIOD:</p></div>
+            
+          </div>
+          <div class="col2-d">
+            <div class="humid-div"><p class="humid-2">0-100%RH (±2% RH accuracy)</p></div>
+            <p class="temp-2">-40 to +80 (±0.5°C accuracy)</p>
+            <div class="voltage-div"><p class="voltage-2">3V TO 5V DC</p></div>
+            <p class="signal-2">Digital Signal via Signal-Bus</p>
+            <div class="sensor-div"><p class="sensor-2">Average: 2 seconds</p></div>
+            
+          </div>  
+          </div>
+          <div class="wiring-img">
+            <div class="wiring-d">
+            <h2 class="title-wiring">Connection and Wiring Diagram(Arduino Control):</h2>
+            <p class="wiring-d-t">
+              1. VCC(3V-5V Power Input) ->Arduino 5V<br>
+              2. DATA (Signal-Bus I/O) -> Arduino Digital Pin<br>
+              (e.g., Pin 2) (Requires 4.7KΩ Pull-Up resistor to VCC)<br>
+              3. NC (Not Connected)<br>
+              4. GND (Ground Connection) -> Arduino GND
+            </p>
+          </div>
+          </div>
+          <div class="ohms-3-d">
+              <h2 class="ohms-t-2">OHM'S LAW CALCULATOR</h2>
+              <hr>
+              <div class="ohms-law">
+                <div class="volt">
+                  <p class="v">Voltage(V)</p>
+                  <div class="enter-div"><p class="enter">Enter V: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                  
+                </div>
+                <div class="current">
+                  <p class="I">Current (I)</p>
+                  <div class="enter-div"><p class="enter2">Enter I: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] </p></div>
+                  
+                </div>
+                <div class="resistance">
+                  <p class="resist">Resistance (Ω)</p>
+                  <div class="result-calc">
+                    <div class="enter-div"><p class="result">Result R: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                    <button class="btn-calc">CALCULATE</button>
+                  </div>
+                  <p class="values">Enter two values , calculate the third.</p>
+                </div>
+                
+              
+              </div>
+            
+            
+       
+        
+          </div>
+           <div class="snippet">
+        <div class="snippet-div">
+          <h2 class="h-snip">Simple Code Snippet (Conceptual):</h2>
+          <img src="assest/dht22 wiring.png" class="dht22-img">
+          <img src="assest/snippet code.png" class="snippet-img">
+        </div>
+      </div>
+          
+      </div>
+     
+    </div>
+
 <script>
   function showSection(sectionId) {
     const allPages = document.querySelectorAll('.page'); 
@@ -257,6 +325,14 @@
         selectedPage.style.display='flex';
     }
 }
+  const navLinks =document.querySelectorAll('li');
+  navLinks.forEach(link => {
+    link.addEventListener('click' ,function(){
+      navLinks.forEach(nav => nav.classList.remove('active'));
+    this.classList.add('active');
+  });
+    });
+    
 
 </script>
   </body>

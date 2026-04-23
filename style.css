@@ -35,8 +35,12 @@ body{
 .navs li:hover{
     transform: scale(1.05);
 }
+li.active{
+    color: black;
+    font-weight: 700;
+}
 .navs{
-    gap:13px;
+    gap:20px;
     display: flex;
     flex-direction: column;
     box-shadow: 7px 0 10px -5px rgba(0, 0, 0, 0.5);
@@ -170,10 +174,10 @@ body{
     /*transform: translateY(-40px);*/
     opacity: 0.9;
 }
-#mosfet , #seven-segment{
+#mosfet , #seven-segment , #dht22{
     height: 800px;
 }
-.ohms , .ohms-2 , .ohms-3{
+.ohms , .ohms-2 , .ohms-3 , .ohms-3-d{
     
     background-color: #2d455d;
     
@@ -197,7 +201,10 @@ body{
 .ohms-3{
     transform: translate(-594px , 20px);
 }
-.ohms-2 ,.ohms-3{
+.ohms-3-d{
+    transform: translate(-240px , 10px) ;
+}
+.ohms-2 ,.ohms-3 ,.ohms-3-d{
     width: 820px;
     padding: 0 220px;
     padding-bottom: 40px;
@@ -399,4 +406,103 @@ hr{
 .code{
     letter-spacing: 1px;
     font-size: 20px;
+}
+.img-d{
+    width: 330px;
+    height:620px;
+    border-radius: 10px;
+    z-index: 200;
+}
+.img-text-d{
+    display: flex;
+    flex-direction: row;
+}
+.texts-key{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(20px);
+}
+.d-title{
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    transform: translateY(-16px);
+}
+.cols{
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-20px);
+}
+.humid-div , .voltage-div , .sensor-div{
+    background-color:#2d455d;
+    height: 40px;
+    width: 350px;
+    border-bottom: 2px white solid ;
+    border-top: 2px white solid ;
+    padding: 7px;
+    margin: 0;
+}
+.humid , .humid-2 , .voltage , .voltage-2 , .sensor , .sensor-2 , .siganl , .signal-2 , .temp , .temp-2{
+    letter-spacing: 1.5px;
+}
+.humid , .humid-2 , .voltage , .voltage-2 , .sensor , .sensor-2 {
+    transform: translateY(-7px);
+}
+.wiring-img{
+    display: flex;
+    flex-direction: row;
+}
+.wiring-d{
+    background-color:#0e1d2b;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 2px #060a16 solid;
+    width: 712px;
+    border-radius: none;
+}
+.img-d-w{
+    width: 200px;
+    height: 150px;
+    transform: translateY(35px);
+    border-radius: 5px;
+    border:#2d455d solid 1px;
+}
+.title-wiring{
+    white-space: nowrap;
+    letter-spacing: 1.5px;
+}
+.temp , .siganl{
+    transform: translateX(4px);
+}
+.signal-2{
+    transform: translateX(6px);
+}
+.wiring-d-t{
+    line-height: 1.8rem;
+}
+#dht22{
+    height: 1000px;
+}
+.ohms-3-d{
+    border-radius: 10px;
+}
+.snippet-div{
+    display: flex;
+    flex-direction: row;
+    transform: translate(-330px , 30px);
+    gap: 20px;
+}
+.dht22-img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+.snippet-img{
+    width: 429px;
+    height: 91px;
+    transform: translateY(20px);
+    border-radius: 10px;
+}
+.h-snip{
+    letter-spacing: 1.25px;
+    font-weight: 700;
 }
