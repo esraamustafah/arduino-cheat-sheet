@@ -361,6 +361,11 @@ hr{
     border: #1c354e solid 2px;
     padding: 10px ;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+}
+.btn-calc:hover{
+    transform: scale(1.05);
+
 }
 .values{
     transform: translate(-424px , -10px);
@@ -589,4 +594,20 @@ hr{
     width: 700px;
     border-radius: 10px;
     transform: translateX(-7px);
+}
+.dist{
+    background-color: #060a16;
+    padding: 0 15px;
+    border-radius: 10px;
+    width: 400px;
+    transform: translate(150px , 10px);
+}
+.dist-p{
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.enter2 ,.enter ,.result{
+    padding: 20px 0;
+    padding-left: 5px;
+    transform: translate(-10px , -6px);
 }

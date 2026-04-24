@@ -95,7 +95,7 @@
               
             </div>
             <div class="btn1">
-              <a href="#mosfet" style="text-decoration: none; color: white;"><button class="btn12">GET STARTED</btn></a>
+              <a href="#mosfet" style="text-decoration: none; color: white;"><button class="btn12">GET STARTED</button></a>
             </div>
           </div>
         </div>
@@ -133,19 +133,19 @@
               <div class="ohms-law">
                 <div class="volt">
                   <p class="v">Voltage(V)</p>
-                  <div class="enter-div"><p class="enter">Enter V: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                  <div class="enter-div"><input type="number" class="enter" placeholder="Enter V: " id="voltageInput"></div>
                   
                 </div>
                 <div class="current">
                   <p class="I">Current (I)</p>
-                  <div class="enter-div"><p class="enter2">Enter I: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] </p></div>
+                  <div class="enter-div"><input type="number" placeholder="Enter I: " class="enter2" id="currentInput"></div>
                   
                 </div>
                 <div class="resistance">
                   <p class="resist">Resistance (Ω)</p>
                   <div class="result-calc">
-                    <div class="enter-div"><p class="result">Result R: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
-                    <button class="btn-calc">CALCULATE</button>
+                    <div class="enter-div"><input type="number" placeholder="Result R: " class="result" id="resistanceInput"></div>
+                    <button class="btn-calc" onclick="calculateOhm()">CALCULATE</button>
                   </div>
                   <p class="values">Enter two values , calculate the third.</p>
                 </div>
@@ -206,19 +206,19 @@
               <div class="ohms-law">
                 <div class="volt">
                   <p class="v">Voltage(V)</p>
-                  <div class="enter-div"><p class="enter">Enter V: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                  <div class="enter-div"><input type="number" placeholder="Enter V: " id="voltageInput" class="enter"></div>
                   
                 </div>
                 <div class="current">
                   <p class="I">Current (I)</p>
-                  <div class="enter-div"><p class="enter2">Enter I: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] </p></div>
+                  <div class="enter-div"><input placeholder="Enter I: " class="enter2" id="currentInput" type="number"></div>
                   
                 </div>
                 <div class="resistance">
                   <p class="resist">Resistance (Ω)</p>
                   <div class="result-calc">
-                    <div class="enter-div"><p class="result">Result R: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
-                    <button class="btn-calc">CALCULATE</button>
+                    <div class="enter-div"><input type="number" id="resistanceInput" class="result" placeholder="Result R: "></div>
+                    <button class="btn-calc" onclick="calculateOhm()">CALCULATE</button>
                   </div>
                   <p class="values">Enter two values , calculate the third.</p>
                 </div>
@@ -278,19 +278,19 @@
               <div class="ohms-law">
                 <div class="volt">
                   <p class="v">Voltage(V)</p>
-                  <div class="enter-div"><p class="enter">Enter V: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
+                  <div class="enter-div"><input type="number" class="enter" id="voltageInput" placeholder="Enter V:"></div>
                   
                 </div>
                 <div class="current">
                   <p class="I">Current (I)</p>
-                  <div class="enter-div"><p class="enter2">Enter I: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] </p></div>
+                  <div class="enter-div"><input class="enter2" type="number" id="currentInput" placeholder="Enter I: "></div>
                   
                 </div>
                 <div class="resistance">
                   <p class="resist">Resistance (Ω)</p>
                   <div class="result-calc">
-                    <div class="enter-div"><p class="result">Result R: [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p></div>
-                    <button class="btn-calc">CALCULATE</button>
+                    <div class="enter-div"><input class="result" type="number" id="resistanceInput" placeholder="Result R: "></div>
+                    <button class="btn-calc" onclick="calculateOhm()">CALCULATE</button>
                   </div>
                   <p class="values">Enter two values , calculate the third.</p>
                 </div>
@@ -367,6 +367,9 @@
             <img src="assest/code-s.png" class="coding-s">
 
           </div>
+          <div class="dist">
+            <p class="dist-p">Distance = (Time_High * Speed of Sound)/2</p>
+          </div>
         </div>
       </div>
     
@@ -389,7 +392,28 @@
     this.classList.add('active');
   });
     });
-    
+  function calculateOhm(){
+    const Vinput = document.getElementById('voltageInput');
+    const Iinput = document.getElementById('currentInput');
+    const Rinput = document.getElementById('resistanceInput');
+
+    const V =parseFloat(Vinput.value);
+    const I = parseFloat(Iinput.value);
+    const R = parseFloat(Rinput.value);
+  
+    if(isNaN(V) && !isNaN(R) && !isNaN(V)){
+      Vinput.value=(I*R).toFixed(2);
+    }
+    else if(isNaN(I) && !isNaN(R) && !isNaN(V)){
+      Iinput.value=(V/R).toFixed(2);
+    }
+    else if(isNaN(R) && !isNaN(I) && !isNaN(V)){
+      Rinput.value=(V/I).toFixed(2);
+    }
+    else{
+      alert("Please leave one field empty to calculate it ");
+    }
+  }
 
 </script>
   </body>
