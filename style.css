@@ -620,3 +620,62 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.img-text-servo{
+    display: flex;
+    flex-direction: row;
+}
+.texts-servo{
+    display: flex;
+    flex-direction: column;
+}
+.cols-servo{
+    display: flex;
+    flex-direction: row;
+}
+.wiring-servo{
+    background-color:#0e1d2b;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 2px #060a16 solid;
+    width: 712px;
+}
+.servo-rows{
+    display: flex;
+    flex-direction: row;
+}
+.servo-cols{
+    display: flex;
+    flex-direction: column;
+}
+.working-div-servo , .speed-div ,.stall-div ,.angle-div {
+    background-color: #2d455d;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+    height: 40px;
+    width: 350px;
+    padding: 7px;
+}
+.servo-img{
+    width: 340px;
+    height: 600px;
+    border-radius: 10px;
+    z-index: 200;
+    transform: translateX(-5px);
+}
+.title-servo{
+    transform: translateY(-7px);
+}
+.working-servo ,.working-servo-2{
+    transform: translateY(-5px);
+    letter-spacing: 1.5px;
+}
+.speed-servo ,.stall-servo , .width-servo ,.control-system{
+    transform: translateX(6px);
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+.speed-servo-2 , .speed-servo-2-2 , .stall-servo-2 , .stall-servo-2-2 ,.angle-servo ,.angle-servo-2{
+    transform: translateY(-5px);
+    letter-spacing: 1.5px;
+
+}

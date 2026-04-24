@@ -35,7 +35,7 @@
           <li onclick="showSection('sonic')">HC-SR04 SONIC</li>
         </ul>
         <ul>
-          <li class="nav-item">SG90 SERVO</li>
+          <li onclick="showSection('servo')">SG90 SERVO</li>
         </ul>
         <ul> 
           <li class="nav-item">16x2 LCD</li>
@@ -93,9 +93,6 @@
               </p>
               </div>
               
-            </div>
-            <div class="btn1">
-              <a href="#mosfet" style="text-decoration: none; color: white;"><button class="btn12">GET STARTED</button></a>
             </div>
           </div>
         </div>
@@ -372,7 +369,61 @@
           </div>
         </div>
       </div>
-    
+   </div>
+    <div class="page" id="servo">
+      <div class="img-text-servo">
+        <img src="assest/servo.png" class="servo-img">
+        <div class="texts-servo">
+          <h2 class="title-servo">SG90 SERVO MOTOR</h2>
+          <div class="cols-servo">
+            <div class="col1-servo">
+              <div class="working-div-servo"><p class="working-servo">Working Voltage:</p></div>
+              
+              <p class="speed-servo">Operating Speed(4.8V):</p>
+              <div class="speed-div"><p class="speed-servo-2">Operating Speed(6.0V):</p></div>
+              
+              <p class="stall-servo">Stall Torque(4.8V):</p>
+              <div class="stall-div"><p class="stall-servo-2">Stall Torque(6.0V):</p></div>
+              
+              <p class="width-servo">Dead Band Width:</p>
+              <div class="angle-div"><p class="angle-servo">Max. Angle:</p></div>
+              
+              <p class="control-system">Control System:</p>
+            </div>
+            <div class="col2-servo">
+              <div class="working-div-servo"><p class="working-servo-2">4.8V to 6.0V</p></div>
+              
+              <p class="speed-servo">0.12 sec / 60 degrees</p>
+              <div class="speed-div"><p class="speed-servo-2-2">0.10 sec / 60 degrees</p></div>
+              
+              <p class="stall-servo-2">1.8 Kg-cm</p>
+              <div class="stall-div"><p class="stall-servo-2-2">2.2 Kg-cm</p></div>
+              
+              <p class="width-servo-2">1μs to 5μs</p>
+              <div class="angle-div"><p class="angle-servo-2">180 degrees</p></div>
+              
+              <p class="control-system-2">Analog Pulse Width Modulation (PMW)</p>
+            </div>
+          </div>
+          <div class="wiring-servo">
+            <div class="servo-cols">
+              <h2 class="title-servo-2">
+              Pinout and Wiring Examples:
+            </h2>
+            <div class="servo-rows">
+              <img src="assest/servo pins.png" class="pins">
+              <p class="connection-servo">
+                Brown(GND)       -> -> Ground (Arduino)<br>
+                Red(VCC)         -> -> 5V (Arduino)<br>
+                Orange(PMW Signal)-> -> PMW pin (e.g.,Arduino Pin 9)
+              </p>
+            </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
 
 <script>
   function showSection(sectionId) {
