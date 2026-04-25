@@ -449,14 +449,21 @@
     });
   function calculateOhm(btn){
     const container = btn.closest('.ohms-law')
-    const Vinput = container.querySelector('.enter');;
+    const Vinput = container.querySelector('.enter');
     const Iinput = container.querySelector('.enter2');
     const Rinput = container.querySelector('.result');
 
     const V =parseFloat(Vinput.value);
     const I = parseFloat(Iinput.value);
     const R = parseFloat(Rinput.value);
-  
+    if(R===0){
+      alert("Resistance cannot be 0 in a real-world circuit (Short Circuit)")
+      return;
+    }
+    if(V<0 || I<0 || R<0){
+      alert("Please enter a positive number");
+      return;
+    }
     if(isNaN(V) && !isNaN(R) && !isNaN(I)){
       Vinput.value=(I*R).toFixed(2);
     }
@@ -469,6 +476,8 @@
     else{
       alert("Please leave one field empty to calculate it ");
     }
+  
+    
   }
 
 </script>
