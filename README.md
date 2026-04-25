@@ -15,4 +15,4 @@ finally , gave a small example of its code
 I used HTML , CSS , and a little of JavaScript (still beginner , just used it in navs and the small calculator)
 ## What's NEXT:
 It is **not responsive** , so when I finish all the components , I'll make it 
-I want to complete the 2 remaining components 
+I want to complete **the remaining LCD.**
