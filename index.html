@@ -430,6 +430,7 @@
     </div>
 
 <script>
+  let click =0;
   function showSection(sectionId) {
     const allPages = document.querySelectorAll('.page'); 
     allPages.forEach(page => {
@@ -445,13 +446,16 @@
     link.addEventListener('click' ,function(){
       navLinks.forEach(nav => nav.classList.remove('active'));
     this.classList.add('active');
+    
   });
     });
   function calculateOhm(btn){
+    
     const container = btn.closest('.ohms-law')
     const Vinput = container.querySelector('.enter');
     const Iinput = container.querySelector('.enter2');
     const Rinput = container.querySelector('.result');
+    console.log("Inputs found:", Vinput, Iinput, Rinput);
 
     const V =parseFloat(Vinput.value);
     const I = parseFloat(Iinput.value);
@@ -477,6 +481,13 @@
       alert("Please leave one field empty to calculate it ");
     }
   
+  setTimeout(() => {
+    Vinput.value="";
+    Rinput.value="";
+    Iinput.value="";
+    Vinput.focus();
+  },3000);
+
     
   }
 
