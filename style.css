@@ -664,6 +664,8 @@ input::-webkit-inner-spin-button {
 }
 .title-servo{
     transform: translateY(-7px);
+    letter-spacing: 1.5px;
+    font-weight: 700;
 }
 .working-servo ,.working-servo-2{
     transform: translateY(-5px);
@@ -677,5 +679,26 @@ input::-webkit-inner-spin-button {
 .speed-servo-2 , .speed-servo-2-2 , .stall-servo-2 , .stall-servo-2-2 ,.angle-servo ,.angle-servo-2{
     transform: translateY(-5px);
     letter-spacing: 1.5px;
-
+}
+.stall-servo-2{
+    transform: translateX(6px);
+}
+#servo{
+    height: 1100px;
+}
+.code-servo{
+    display: flex;
+    flex-direction: column;
+}
+.servo-code-img{
+    width: 570px;
+    height: 300px;
+    border-radius: 10px;
+}
+.title-servo-3{
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+.connection-servo{
+    line-height: 1.5rem;
 }
