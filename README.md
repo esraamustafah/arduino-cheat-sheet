@@ -16,5 +16,4 @@ I made the same thing with DHT22 sensor , HC-SRO4 and SG90 servo.
 I used HTML , CSS , and a little of JavaScript (still beginner , just used it in navs and the small calculator)
 ## What's NEXT:
 It is **not responsive** , so when I finish all the components , I'll make it 
-I want to complete the remaining components that I haven't still put them 
-I have already begun with the **LCD** (You can see it in the nav bar but still working on it)
+I want to complete the remaining components that I haven't still put them (LEDS , POTIENTIOMETER , IR SENSOR , BUTTONS , LCDS)
