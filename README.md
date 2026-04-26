@@ -17,3 +17,4 @@ I used HTML , CSS , and a little of JavaScript (still beginner , just used it in
 ## What's NEXT:
 It is **not responsive** , so when I finish all the components , I'll make it 
 I want to complete the remaining components that I haven't still put them (LEDS , POTIENTIOMETER , IR SENSOR , BUTTONS , LCDS)
+I want to add the "COPY BUTTON" to the code 
