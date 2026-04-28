@@ -20,22 +20,22 @@
       </div>
       <div class="navs">
         <ul>
-          <li onclick="showSection('introduction')">INTRODUCTION</li>
+          <li onclick="showSection('introduction')" class="introduction active">INTRODUCTION</li>
         </ul>
         <ul>
-          <li onclick="showSection('mosfet')">N-MOSFET (IRF510)</li>
+          <li onclick="showSection('mosfet')"class="mosfet">N-MOSFET (IRF510)</li>
         </ul>
         <ul>
-          <li onclick="showSection('seven-segment')">7-SEGMENT DISPLAY</li>
+          <li onclick="showSection('seven-segment')"  class="seven-segment">7-SEGMENT DISPLAY</li>
         </ul>
         <ul>
-          <li onclick="showSection('dht22')">DHT22 SENSOR</li>
+          <li onclick="showSection('dht22')" class="dht22" >DHT22 SENSOR</li>
         </ul>
         <ul>
-          <li onclick="showSection('sonic')">HC-SR04 SONIC</li>
+          <li onclick="showSection('sonic')" class="sonic">HC-SR04 SONIC</li>
         </ul>
         <ul>
-          <li onclick="showSection('servo')">SG90 SERVO</li>
+          <li onclick="showSection('servo')" class="servo" >SG90 SERVO</li>
         </ul>
         <!--  <ul> 
           <li class="nav-item">16x2 LCD</li>
@@ -429,7 +429,27 @@
       </div>
     </div>
 
+
+
 <script>
+//   let click =0;
+//   function showSection(sectionId) {
+//     const allPages = document.querySelectorAll('.page'); 
+//     allPages.forEach(page => {
+//         page.style.display='none';
+//     })
+//     const selectedPage = document.getElementById(sectionId);
+//     if(selectedPage){
+//         selectedPage.style.display='flex';
+//     }
+// }
+//   const navLinks =document.querySelectorAll('li');
+//   navLinks.forEach(link => {
+//     link.addEventListener('click' ,function(){
+//       navLinks.forEach(nav => nav.classList.remove('active'));
+//     this.classList.add('active');
+    
+//   });
   let click =0;
   function showSection(sectionId) {
     const allPages = document.querySelectorAll('.page'); 
@@ -445,7 +465,17 @@
   navLinks.forEach(link => {
     link.addEventListener('click' ,function(){
       navLinks.forEach(nav => nav.classList.remove('active'));
+      const selectedPageClass = this.getAttribute("class")
     this.classList.add('active');
+    const allPages = document.querySelectorAll('.page'); 
+    allPages.forEach(page => {
+      if(page.getAttribute("id") == selectedPageClass){
+        page.style.display = flex;
+      }
+        page.style.display='none';
+
+    })
+    // const selectedPage = document.getElementById(sectionId);
     
   });
     });
