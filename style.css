@@ -623,6 +623,7 @@ input::-webkit-inner-spin-button {
 .img-text-servo{
     display: flex;
     flex-direction: row;
+    gap:13px
 }
 .texts-servo{
     display: flex;
